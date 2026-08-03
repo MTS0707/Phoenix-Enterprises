@@ -4,13 +4,14 @@ Open items before this site is ready to publish live.
 
 ## Blocking
 
-- [ ] **Decide on the contact-form backend.** Currently submits via `mailto:` (opens the visitor's email client) — kept as-is for the 2026-08-03 launch. Structura Nordic's contact form instead posts to web3forms.com via AJAX with proper success/error states. Revisit if the client wants a better submission experience.
+(none currently)
 
 ## Done
 
 - [x] ~~No git repository~~ — initialized 2026-08-03, pushed to `github.com/MTS0707/Phoenix-Enterprises`.
 - [x] ~~No hosting/domain decided~~ — published 2026-08-03 via GitHub Pages at `https://mts0707.github.io/Phoenix-Enterprises/`. Custom domain `phoenixenter.com` (registered at Hostinger) attached 2026-08-03: A records for `@` pointed at GitHub Pages' four IPs, `www` CNAME'd to `mts0707.github.io`, domain set in repo Settings → Pages. Live and serving over HTTPS at `https://phoenixenter.com`.
 - [x] ~~Re-add a captcha to `contact.html`~~ — added 2026-08-03 as a simple client-side math challenge (e.g. "what is 4 + 7?"), no external service/API key needed; Send button stays disabled until answered correctly. Client asked for "something simple" over hCaptcha. Note: this only deters basic bots, not a determined attacker — revisit with hCaptcha (real key) if spam becomes an actual problem.
+- [x] ~~Decide on the contact-form backend~~ — switched from `mailto:` to web3forms.com (AJAX POST) on 2026-08-03, matching Structura Nordic's pattern. Fixes the "This form is not secure, autofill has been turned off" browser warning that `mailto:` forms trigger. Form now shows an in-page "Message Sent" confirmation instead of opening the visitor's email client. Access key is embedded in `contact.html` (web3forms keys are meant to be public/client-side, not secret).
 
 ## Non-blocking / nice-to-have
 
