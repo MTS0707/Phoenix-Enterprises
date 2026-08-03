@@ -7,6 +7,7 @@ All notable changes to this site are recorded here, newest entry at the top of i
 - Removed client "Ognibene India" entirely from the site per client request — deleted from the `index.html` Trusted-By strip and the `results.html` client list.
 - **Published live.** Initialized git, pushed to `github.com/MTS0707/Phoenix-Enterprises`, and enabled GitHub Pages (deploy from `main`, root). Live at `https://mts0707.github.io/Phoenix-Enterprises/`. Published without a captcha on the contact form and with the `mailto:` backend still in place — both explicit decisions to revisit later, not oversights (see `TODO.md`).
 - **Custom domain attached.** `phoenixenter.com` (registered at Hostinger) pointed at GitHub Pages via A records + `www` CNAME, set as the custom domain in repo settings. Site now live at `https://phoenixenter.com` with HTTPS enforced.
+- **Fixed cookie-consent banner Accept/Reject buttons.** Both buttons were missing the `@click` attribute name entirely (`<button ="...">` instead of `<button @click="...">`) since the banner was first added on 2026-07-27 — so clicking either did nothing, the banner never dismissed, and it sat fixed over the bottom of every page blocking the footer's "Cookie Policy" link underneath it. Fixed across all 9 pages.
 
 ## 2026-07-27
 
