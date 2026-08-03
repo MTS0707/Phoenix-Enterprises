@@ -224,8 +224,8 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-wrap items-center justify-between gap-4">
     <p class="text-sm">We use minimal cookies from embedded content (like Google Maps) to run this site. See our <a href="cookie-policy.html" class="text-sky-400 underline hover:text-sky-300">Cookie Policy</a> to learn more.</p>
     <div class="flex gap-3 shrink-0">
-      <button ="localStorage.setItem('phx-cookie-consent','rejected'); show=false" class="text-sm font-semibold text-slate-300 hover:text-white transition px-4 py-2">Reject</button>
-      <button ="localStorage.setItem('phx-cookie-consent','accepted'); show=false" class="inline-flex items-center rounded-md bg-orange-500 hover:bg-orange-600 transition px-5 py-2 text-sm font-bold text-white shadow">Accept</button>
+      <button @click="localStorage.setItem('phx-cookie-consent','rejected'); show=false" class="text-sm font-semibold text-slate-300 hover:text-white transition px-4 py-2">Reject</button>
+      <button @click="localStorage.setItem('phx-cookie-consent','accepted'); show=false" class="inline-flex items-center rounded-md bg-orange-500 hover:bg-orange-600 transition px-5 py-2 text-sm font-bold text-white shadow">Accept</button>
     </div>
   </div>
 </div>
