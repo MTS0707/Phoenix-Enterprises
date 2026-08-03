@@ -4,13 +4,13 @@ Open items before this site is ready to publish live.
 
 ## Blocking
 
-- [ ] **Re-add a captcha to `contact.html`.** Was removed on 2026-07-27 at the client's request ("will do it after trials and publishing"). Site was published live on 2026-08-03 without it (explicit decision to skip for now) — revisit soon. Recommended: hCaptcha, matching the Structura Nordic site — needs a **real site key** registered at [hcaptcha.com](https://www.hcaptcha.com) for the live domain before it's wired back in (the test key used earlier always passes and gives no real protection).
 - [ ] **Decide on the contact-form backend.** Currently submits via `mailto:` (opens the visitor's email client) — kept as-is for the 2026-08-03 launch. Structura Nordic's contact form instead posts to web3forms.com via AJAX with proper success/error states. Revisit if the client wants a better submission experience.
 
 ## Done
 
 - [x] ~~No git repository~~ — initialized 2026-08-03, pushed to `github.com/MTS0707/Phoenix-Enterprises`.
 - [x] ~~No hosting/domain decided~~ — published 2026-08-03 via GitHub Pages at `https://mts0707.github.io/Phoenix-Enterprises/`. Custom domain `phoenixenter.com` (registered at Hostinger) attached 2026-08-03: A records for `@` pointed at GitHub Pages' four IPs, `www` CNAME'd to `mts0707.github.io`, domain set in repo Settings → Pages. Live and serving over HTTPS at `https://phoenixenter.com`.
+- [x] ~~Re-add a captcha to `contact.html`~~ — added 2026-08-03 as a simple client-side math challenge (e.g. "what is 4 + 7?"), no external service/API key needed; Send button stays disabled until answered correctly. Client asked for "something simple" over hCaptcha. Note: this only deters basic bots, not a determined attacker — revisit with hCaptcha (real key) if spam becomes an actual problem.
 
 ## Non-blocking / nice-to-have
 

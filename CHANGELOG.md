@@ -9,6 +9,7 @@ All notable changes to this site are recorded here, newest entry at the top of i
 - **Custom domain attached.** `phoenixenter.com` (registered at Hostinger) pointed at GitHub Pages via A records + `www` CNAME, set as the custom domain in repo settings. Site now live at `https://phoenixenter.com` with HTTPS enforced.
 - **Fixed cookie-consent banner Accept/Reject buttons.** Both buttons were missing the `@click` attribute name entirely (`<button ="...">` instead of `<button @click="...">`) since the banner was first added on 2026-07-27 — so clicking either did nothing, the banner never dismissed, and it sat fixed over the bottom of every page blocking the footer's "Cookie Policy" link underneath it. Fixed across all 9 pages.
 - **Updated contact email** from `phoenixenterprises28386@gmail.com` to `info@phoenixenter.com` (mailto links, contact-form action, and displayed text) across all 9 pages, now that the custom domain is live. Note: the mailbox itself needs to be set up/forwarded on the Hostinger side for this address to actually receive mail.
+- **Re-added a captcha to `contact.html`.** Client asked for "something simple" over hCaptcha this time — implemented as a client-side math challenge ("what is X + Y?") via Alpine; the Send Message button stays disabled until answered correctly. No external service, account, or API key involved.
 
 ## 2026-07-27
 
