@@ -10,7 +10,7 @@ Open items before this site is ready to publish live.
 ## Done
 
 - [x] ~~No git repository~~ — initialized 2026-08-03, pushed to `github.com/MTS0707/Phoenix-Enterprises`.
-- [x] ~~No hosting/domain decided~~ — published 2026-08-03 via GitHub Pages at `https://mts0707.github.io/Phoenix-Enterprises/`. No custom domain attached yet.
+- [x] ~~No hosting/domain decided~~ — published 2026-08-03 via GitHub Pages at `https://mts0707.github.io/Phoenix-Enterprises/`. Custom domain `phoenixenter.com` (registered at Hostinger) attached 2026-08-03: A records for `@` pointed at GitHub Pages' four IPs, `www` CNAME'd to `mts0707.github.io`, domain set in repo Settings → Pages. Live and serving over HTTPS at `https://phoenixenter.com`.
 
 ## Non-blocking / nice-to-have
 
