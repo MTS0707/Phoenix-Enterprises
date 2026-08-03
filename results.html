@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proven Results | Phoenix Enterprises</title>
+<meta name="description" content="Documented on-site cutting-tool trial results and trusted manufacturing clients of Phoenix Enterprises, Pune.">
+<link rel="icon" href="images/brand/logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] } } } }
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<style>[x-cloak]{display:none!important;} html{scroll-behavior:smooth;}</style>
+</head>
+<body class="font-sans text-slate-800 antialiased">
+
+<!-- ===== HEADER ===== -->
+<header x-data="{ open: false }" class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-20">
+      <a href="index.html" class="flex items-center gap-3 shrink-0">
+        <img src="images/brand/logo.png" alt="Phoenix Enterprises" class="h-16 w-auto">
+      </a>
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-slate-700">
+        <a href="index.html" class="hover:text-sky-600 transition">Home</a>
+        <a href="about.html" class="hover:text-sky-600 transition">About</a>
+        <a href="products.html" class="hover:text-sky-600 transition">Products</a>
+        <a href="services.html" class="hover:text-sky-600 transition">Services</a>
+        <a href="results.html" class="text-sky-600">Proven Results</a>
+        <a href="contact.html" class="hover:text-sky-600 transition">Contact</a>
+      </nav>
+      <div class="hidden lg:flex items-center gap-5">
+        <a href="tel:+918208271809" class="text-sm font-semibold text-slate-600 hover:text-sky-600 transition">+91 82082 71809</a>
+        <a href="contact.html" class="inline-flex items-center rounded-md bg-orange-500 px-5 py-2.5 text-sm font-bold text-white shadow hover:bg-orange-600 transition">Get a Quote</a>
+      </div>
+      <button @click="open = !open" class="lg:hidden p-2 text-slate-700" aria-label="Toggle menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path x-show="!open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          <path x-show="open" x-cloak stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+    <div x-show="open" x-cloak x-transition class="lg:hidden pb-6 space-y-1 text-sm font-semibold">
+      <a href="index.html" class="block py-2 text-slate-700">Home</a>
+      <a href="about.html" class="block py-2 text-slate-700">About</a>
+      <a href="products.html" class="block py-2 text-slate-700">Products</a>
+      <a href="services.html" class="block py-2 text-slate-700">Services</a>
+      <a href="results.html" class="block py-2 text-sky-600">Proven Results</a>
+      <a href="contact.html" class="block py-2 text-slate-700">Contact</a>
+      <a href="contact.html" class="mt-3 inline-flex items-center rounded-md bg-orange-500 px-5 py-2.5 text-sm font-bold text-white shadow">Get a Quote</a>
+    </div>
+  </div>
+</header>
+
+<!-- ===== PAGE HERO ===== -->
+<section class="relative isolate overflow-hidden bg-[#071E4A] py-16 lg:py-20">
+  <img src="images/brand/machining-hero.jpg" alt="CNC machining in progress" class="absolute inset-0 h-full w-full object-cover opacity-75">
+  <div class="absolute inset-0 bg-gradient-to-r from-[#071E4A]/85 via-[#071E4A]/45 to-[#071E4A]/20"></div>
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <p class="text-sky-400 font-bold tracking-widest text-sm mb-3">PROOF, NOT PROMISES</p>
+    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight max-w-3xl">Documented Tool Trials &mdash; Real Customer Results</h1>
+    <p class="mt-4 text-slate-300 max-w-2xl">All trials run on-site with the customer's own machine, part and material &mdash; signed off by the customer, operator and Phoenix Enterprises engineer.</p>
+  </div>
+</section>
+
+<!-- ===== RESULTS TABLE ===== -->
+<section class="py-20 lg:py-28">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="overflow-x-auto rounded-2xl border border-slate-200 shadow-sm">
+      <table class="w-full text-left border-collapse min-w-[720px]">
+        <thead>
+          <tr class="bg-[#071E4A] text-white text-sm">
+            <th class="px-6 py-4 font-bold">Customer / Operation</th>
+            <th class="px-6 py-4 font-bold">Benchmark</th>
+            <th class="px-6 py-4 font-bold">Result</th>
+          </tr>
+        </thead>
+        <tbody class="text-sm divide-y divide-slate-200">
+          <tr class="bg-white">
+            <td class="px-6 py-5 align-top">
+              <p class="font-bold text-slate-900">Micro Engg</p>
+              <p class="text-slate-500">Milling &mdash; LNMU 0303 insert, MS</p>
+            </td>
+            <td class="px-6 py-5 align-top text-slate-600">vs a competitor insert brand</td>
+            <td class="px-6 py-5 align-top">
+              <p class="font-extrabold text-sky-600">3.2x insert life</p>
+              <p class="text-slate-500">64 vs 20 pieces per insert across all corners</p>
+            </td>
+          </tr>
+          <tr class="bg-slate-50">
+            <td class="px-6 py-5 align-top">
+              <p class="font-bold text-slate-900">V.P. Precision</p>
+              <p class="text-slate-500">Side milling, Alloy Steel (EN24)</p>
+            </td>
+            <td class="px-6 py-5 align-top text-slate-600">vs a competitor end mill brand</td>
+            <td class="px-6 py-5 align-top">
+              <p class="font-extrabold text-sky-600">67% longer life</p>
+              <p class="text-slate-500">500 vs 300 pieces before re-sharpening</p>
+            </td>
+          </tr>
+          <tr class="bg-white">
+            <td class="px-6 py-5 align-top">
+              <p class="font-bold text-slate-900">S.R. Auto Parts</p>
+              <p class="text-slate-500">Face milling, MS</p>
+            </td>
+            <td class="px-6 py-5 align-top text-slate-600">vs a competitor insert brand</td>
+            <td class="px-6 py-5 align-top">
+              <p class="font-extrabold text-sky-600">51% more edge life</p>
+              <p class="text-slate-500">80 vs 53 pieces per edge</p>
+            </td>
+          </tr>
+          <tr class="bg-slate-50">
+            <td class="px-6 py-5 align-top">
+              <p class="font-bold text-slate-900">Vikas Industries</p>
+              <p class="text-slate-500">Grooving, Stainless Steel (40-45 HRC)</p>
+            </td>
+            <td class="px-6 py-5 align-top text-slate-600">vs standard grooving insert</td>
+            <td class="px-6 py-5 align-top">
+              <p class="font-extrabold text-sky-600">4x tool life</p>
+              <p class="text-slate-500">320 vs 80 pieces per corner</p>
+            </td>
+          </tr>
+          <tr class="bg-white">
+            <td class="px-6 py-5 align-top">
+              <p class="font-bold text-slate-900">Suresh Indu Laser</p>
+              <p class="text-slate-500">Turning</p>
+            </td>
+            <td class="px-6 py-5 align-top text-slate-600">vs a competitor insert brand</td>
+            <td class="px-6 py-5 align-top">
+              <p class="font-extrabold text-sky-600">71% more life, 38% faster</p>
+              <p class="text-slate-500">720 vs 420 pieces/insert; also resolved a chip-breaking issue flagged by the customer</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TRUSTED BY ===== -->
+<section class="py-20 lg:py-28">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <p class="text-sky-700 font-bold tracking-widest text-sm mb-3 text-center">TRUSTED BY</p>
+    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight mb-10 text-center">Our Valued Customers</h2>
+    <div class="flex flex-wrap justify-center gap-3">
+      <span class="px-5 py-3 bg-slate-50 border border-slate-200 rounded-full text-sm font-semibold text-slate-700">Abhitech Fab and Machining Pvt. Ltd.</span>
+      <span class="px-5 py-3 bg-slate-50 border border-slate-200 rounded-full text-sm font-semibold text-slate-700">Mather Platt</span>
+      <span class="px-5 py-3 bg-slate-50 border border-slate-200 rounded-full text-sm font-semibold text-slate-700">Abhijeet Engineering</span>
+      <span class="px-5 py-3 bg-slate-50 border border-slate-200 rounded-full text-sm font-semibold text-slate-700">Sai Industry</span>
+      <span class="px-5 py-3 bg-slate-50 border border-slate-200 rounded-full text-sm font-semibold text-slate-700">Nibhe Ltd</span>
+      <span class="px-5 py-3 bg-slate-50 border border-slate-200 rounded-full text-sm font-semibold text-slate-700">Nexteer</span>
+      <span class="px-5 py-3 bg-slate-50 border border-slate-200 rounded-full text-sm font-semibold text-slate-700">Delval Flow Controls</span>
+      <span class="px-5 py-3 bg-slate-50 border border-slate-200 rounded-full text-sm font-semibold text-slate-700">Suresh Indu Laser</span>
+    </div>
+    <p class="text-center text-slate-500 text-sm mt-8">...and a growing base of manufacturing customers across the Pune industrial belt.</p>
+  </div>
+</section>
+
+<!-- ===== CTA BAND ===== -->
+<section class="py-20 bg-gradient-to-r from-[#071E4A] to-[#0A3A8C]">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Want Results Like These on Your Line?</h2>
+    <p class="mt-4 text-slate-200">Request a documented on-site trial &mdash; benchmarked against your current tooling, signed off by your own team.</p>
+    <a href="contact.html" class="mt-8 inline-flex items-center rounded-md bg-orange-500 px-8 py-4 text-base font-bold text-white shadow-lg hover:bg-orange-600 transition">Request a Trial</a>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="bg-[#071E4A] text-slate-300">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div>
+      <div class="inline-block bg-white rounded-lg p-2 mb-4">
+        <img src="images/brand/logo.png" alt="Phoenix Enterprises" class="h-14 w-auto">
+      </div>
+      <p class="text-sm leading-6">Cutting Tool Solutions &amp; Application Engineering. Authorized channel partner for TRIMAT &amp; DEREK.</p>
+    </div>
+    <div>
+      <h3 class="text-white font-semibold mb-4">Quick Links</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+        <li><a href="products.html" class="hover:text-white transition">Products</a></li>
+        <li><a href="services.html" class="hover:text-white transition">Services</a></li>
+        <li><a href="results.html" class="hover:text-white transition">Proven Results</a></li>
+        <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-white font-semibold mb-4">Principal Brands</h3>
+      <ul class="space-y-2 text-sm">
+        <li>TRIMAT &mdash; Solid Carbide &amp; Indexable Tooling</li>
+        <li>DEREK &mdash; Inserts &amp; Tool-Holding Systems</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-white font-semibold mb-4">Contact</h3>
+      <ul class="space-y-3 text-sm">
+        <li>Plot No. 153, Daisy J-604, Sector 11, Tulsi Landmark, Chikhali, Pune - 411019</li>
+        <li><a href="tel:+918208271809" class="hover:text-white transition">+91 82082 71809</a> / <a href="tel:+917350205300" class="hover:text-white transition">73502 05300</a></li>
+        <li><a href="mailto:phoenixenterprises28386@gmail.com" class="hover:text-white transition break-all">phoenixenterprises28386@gmail.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-slate-800 py-6 px-4">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-slate-500 text-center">
+      <p>&copy; 2026 Phoenix Enterprises. All rights reserved. | GST No. 27BGUPG8728E1ZX</p>
+      <div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-1">
+        <a href="privacy-policy.html" class="hover:text-white transition">Privacy Policy</a>
+        <a href="terms-of-service.html" class="hover:text-white transition">Terms of Service</a>
+        <a href="cookie-policy.html" class="hover:text-white transition">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div x-data="{ show: false }" x-init="show = !localStorage.getItem('phx-cookie-consent')" x-show="show" x-cloak x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 translate-y-4" x-transition:enter-end="opacity-100 translate-y-0" class="fixed inset-x-0 bottom-0 z-[60] bg-[#071E4A] border-t border-white/10 text-slate-200 shadow-[0_-4px_20px_rgba(0,0,0,0.25)]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-wrap items-center justify-between gap-4">
+    <p class="text-sm">We use minimal cookies from embedded content (like Google Maps) to run this site. See our <a href="cookie-policy.html" class="text-sky-400 underline hover:text-sky-300">Cookie Policy</a> to learn more.</p>
+    <div class="flex gap-3 shrink-0">
+      <button ="localStorage.setItem('phx-cookie-consent','rejected'); show=false" class="text-sm font-semibold text-slate-300 hover:text-white transition px-4 py-2">Reject</button>
+      <button ="localStorage.setItem('phx-cookie-consent','accepted'); show=false" class="inline-flex items-center rounded-md bg-orange-500 hover:bg-orange-600 transition px-5 py-2 text-sm font-bold text-white shadow">Accept</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>

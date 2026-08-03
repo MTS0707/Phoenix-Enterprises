@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us | Phoenix Enterprises</title>
+<meta name="description" content="Phoenix Enterprises is an authorized channel partner of TRIMAT &amp; DEREK, supplying customised cutting-tool solutions across Pune's manufacturing belt for over 8 years.">
+<link rel="icon" href="images/brand/logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] } } } }
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<style>[x-cloak]{display:none!important;} html{scroll-behavior:smooth;}</style>
+</head>
+<body class="font-sans text-slate-800 antialiased">
+
+<!-- ===== HEADER ===== -->
+<header x-data="{ open: false }" class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-20">
+      <a href="index.html" class="flex items-center gap-3 shrink-0">
+        <img src="images/brand/logo.png" alt="Phoenix Enterprises" class="h-16 w-auto">
+      </a>
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-slate-700">
+        <a href="index.html" class="hover:text-sky-600 transition">Home</a>
+        <a href="about.html" class="text-sky-600">About</a>
+        <a href="products.html" class="hover:text-sky-600 transition">Products</a>
+        <a href="services.html" class="hover:text-sky-600 transition">Services</a>
+        <a href="results.html" class="hover:text-sky-600 transition">Proven Results</a>
+        <a href="contact.html" class="hover:text-sky-600 transition">Contact</a>
+      </nav>
+      <div class="hidden lg:flex items-center gap-5">
+        <a href="tel:+918208271809" class="text-sm font-semibold text-slate-600 hover:text-sky-600 transition">+91 82082 71809</a>
+        <a href="contact.html" class="inline-flex items-center rounded-md bg-orange-500 px-5 py-2.5 text-sm font-bold text-white shadow hover:bg-orange-600 transition">Get a Quote</a>
+      </div>
+      <button @click="open = !open" class="lg:hidden p-2 text-slate-700" aria-label="Toggle menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path x-show="!open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          <path x-show="open" x-cloak stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+    <div x-show="open" x-cloak x-transition class="lg:hidden pb-6 space-y-1 text-sm font-semibold">
+      <a href="index.html" class="block py-2 text-slate-700">Home</a>
+      <a href="about.html" class="block py-2 text-sky-600">About</a>
+      <a href="products.html" class="block py-2 text-slate-700">Products</a>
+      <a href="services.html" class="block py-2 text-slate-700">Services</a>
+      <a href="results.html" class="block py-2 text-slate-700">Proven Results</a>
+      <a href="contact.html" class="block py-2 text-slate-700">Contact</a>
+      <a href="contact.html" class="mt-3 inline-flex items-center rounded-md bg-orange-500 px-5 py-2.5 text-sm font-bold text-white shadow">Get a Quote</a>
+    </div>
+  </div>
+</header>
+
+<!-- ===== PAGE HERO ===== -->
+<section class="relative isolate overflow-hidden bg-[#071E4A] py-16 lg:py-20">
+  <img src="images/brand/machining-hero.jpg" alt="CNC machining in progress" class="absolute inset-0 h-full w-full object-cover opacity-75">
+  <div class="absolute inset-0 bg-gradient-to-r from-[#071E4A]/85 via-[#071E4A]/45 to-[#071E4A]/20"></div>
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <p class="text-sky-400 font-bold tracking-widest text-sm mb-3">WHO WE ARE</p>
+    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight max-w-3xl">A Trusted Cutting-Tool Partner for Pune's Manufacturers</h1>
+  </div>
+</section>
+
+<!-- ===== NARRATIVE ===== -->
+<section class="py-20 lg:py-28">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-16">
+    <div class="lg:col-span-2">
+      <p class="text-slate-600 leading-relaxed text-lg">Phoenix Enterprises is a young, energetic organisation supplying customised cutting-tool solutions across the Pune industrial belt. As an authorized channel partner of TRIMAT and DEREK, every product we sell is backed by dedicated technical follow-up and after-sales support.</p>
+      <p class="mt-5 text-slate-600 leading-relaxed text-lg">Over 8 years, we have paired quality tooling with genuine technical partnership &mdash; running on-site trials, analysing cutting conditions, and continuously improving process economics for our customers. That approach has built repeat business with a growing base of manufacturing clients across Pune.</p>
+
+      <div class="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-6">
+        <div class="border-l-4 border-sky-600 pl-4">
+          <p class="text-3xl font-extrabold text-slate-900">8+</p>
+          <p class="text-sm text-slate-500 mt-1">Years in Business</p>
+        </div>
+        <div class="border-l-4 border-sky-600 pl-4">
+          <p class="text-3xl font-extrabold text-slate-900">&#8377;12.8 Cr+</p>
+          <p class="text-sm text-slate-500 mt-1">Turnover Milestone (FY 2025)</p>
+        </div>
+        <div class="border-l-4 border-sky-600 pl-4">
+          <p class="text-3xl font-extrabold text-slate-900">2</p>
+          <p class="text-sm text-slate-500 mt-1">Principal Brand Partners</p>
+        </div>
+        <div class="border-l-4 border-sky-600 pl-4">
+          <p class="text-3xl font-extrabold text-slate-900">9+</p>
+          <p class="text-sm text-slate-500 mt-1">Esteemed Corporate Clients</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-slate-50 border border-slate-200 rounded-2xl p-8 h-fit">
+      <img src="images/brand/gajanan-gore.png" alt="Gajanan Gore, Proprietor" class="h-56 w-56 rounded-full object-cover mx-auto">
+      <p class="font-bold text-slate-900 text-center mt-5 text-lg">Gajanan Gore</p>
+      <p class="text-sm text-slate-500 text-center">Proprietor, Phoenix Enterprises</p>
+      <blockquote class="mt-6 text-center text-slate-700 font-semibold leading-relaxed italic">&ldquo;Spirit of Enterprise &mdash; Pursue Hardness and Diligence, Limitlessly.&rdquo;</blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STRENGTHS ===== -->
+<section class="py-20 lg:py-28 bg-slate-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-2xl">
+      <p class="text-sky-700 font-bold tracking-widest text-sm mb-3">OUR STRENGTHS</p>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight">Why Manufacturers Partner With Phoenix Enterprises</h2>
+    </div>
+    <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-white rounded-xl p-7 border border-slate-200 shadow-sm">
+        <div class="h-11 w-11 rounded-lg bg-sky-100 flex items-center justify-center text-sky-600 font-bold mb-4">01</div>
+        <h3 class="font-bold text-slate-900 mb-2">Manufacturer-Backed Quality</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">Every product is sourced through authorized channel partnership with TRIMAT, one of India's leading solid-carbide and indexable tooling manufacturers.</p>
+      </div>
+      <div class="bg-white rounded-xl p-7 border border-slate-200 shadow-sm">
+        <div class="h-11 w-11 rounded-lg bg-sky-100 flex items-center justify-center text-sky-600 font-bold mb-4">02</div>
+        <h3 class="font-bold text-slate-900 mb-2">Dedicated After-Sales Support</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">We stay engaged well beyond the sale, with consistent follow-up that keeps customers coming back for repeat orders.</p>
+      </div>
+      <div class="bg-white rounded-xl p-7 border border-slate-200 shadow-sm">
+        <div class="h-11 w-11 rounded-lg bg-sky-100 flex items-center justify-center text-sky-600 font-bold mb-4">03</div>
+        <h3 class="font-bold text-slate-900 mb-2">Applications &amp; Trial Engineering</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">On-site tool proveouts and documented cutting-parameter trials help customers extract maximum tool life and finish quality.</p>
+      </div>
+      <div class="bg-white rounded-xl p-7 border border-slate-200 shadow-sm">
+        <div class="h-11 w-11 rounded-lg bg-sky-100 flex items-center justify-center text-sky-600 font-bold mb-4">04</div>
+        <h3 class="font-bold text-slate-900 mb-2">Complete Tooling Range</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">One counter for inserts, solid carbide tools, turning and milling tools, and tool-holding systems &mdash; for every machining need.</p>
+      </div>
+      <div class="bg-white rounded-xl p-7 border border-slate-200 shadow-sm">
+        <div class="h-11 w-11 rounded-lg bg-sky-100 flex items-center justify-center text-sky-600 font-bold mb-4">05</div>
+        <h3 class="font-bold text-slate-900 mb-2">Regrinding &amp; Special Tooling</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">In-house support for tool regrinding, resharpening and special tool manufacturing to reduce customer downtime.</p>
+      </div>
+      <div class="bg-white rounded-xl p-7 border border-slate-200 shadow-sm">
+        <div class="h-11 w-11 rounded-lg bg-sky-100 flex items-center justify-center text-sky-600 font-bold mb-4">06</div>
+        <h3 class="font-bold text-slate-900 mb-2">Consistent, Reliable Supply</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">Steady year-on-year growth in the Pune region, built on dependable delivery and pricing customers can plan around.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BRANDS ===== -->
+<section class="py-20 lg:py-28">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-2xl">
+      <p class="text-sky-700 font-bold tracking-widest text-sm mb-3">AUTHORIZED DEALER</p>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight">Our Principal Brands</h2>
+    </div>
+    <div class="mt-12 grid md:grid-cols-2 gap-8">
+      <div class="rounded-2xl p-8 lg:p-10 bg-gradient-to-br from-[#071E4A] to-[#0A3A8C] text-white">
+        <h3 class="text-2xl font-extrabold mb-4">TRIMAT</h3>
+        <p class="text-slate-300 leading-relaxed">Phoenix Enterprises operates as an authorized channel partner of TRIMAT, one of India's largest manufacturers of solid carbide and indexable cutting tools. TRIMAT brings modern production facilities, the latest coatings and chip-breaker technology, and a full range of solid carbide tooling for diverse machining applications.</p>
+      </div>
+      <div class="rounded-2xl p-8 lg:p-10 bg-gradient-to-br from-sky-700 to-sky-500 text-white">
+        <h3 class="text-2xl font-extrabold mb-4">DEREK</h3>
+        <p class="text-sky-50 leading-relaxed">DEREK is our second principal brand, supplying precision inserts, tool holders and tool-holding systems used across turning, milling and grooving operations. Paired with TRIMAT, it lets Phoenix Enterprises offer customers a genuine second-source comparison on tooling and grade selection for every application.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA BAND ===== -->
+<section class="py-20 bg-gradient-to-r from-[#071E4A] to-[#0A3A8C]">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Let's Build a Lasting Partnership</h2>
+    <p class="mt-4 text-slate-200">We hope you will give us the opportunity to serve you and build a relationship that is everlasting.</p>
+    <a href="contact.html" class="mt-8 inline-flex items-center rounded-md bg-orange-500 px-8 py-4 text-base font-bold text-white shadow-lg hover:bg-orange-600 transition">Get in Touch</a>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="bg-[#071E4A] text-slate-300">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div>
+      <div class="inline-block bg-white rounded-lg p-2 mb-4">
+        <img src="images/brand/logo.png" alt="Phoenix Enterprises" class="h-14 w-auto">
+      </div>
+      <p class="text-sm leading-6">Cutting Tool Solutions &amp; Application Engineering. Authorized channel partner for TRIMAT &amp; DEREK.</p>
+    </div>
+    <div>
+      <h3 class="text-white font-semibold mb-4">Quick Links</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+        <li><a href="products.html" class="hover:text-white transition">Products</a></li>
+        <li><a href="services.html" class="hover:text-white transition">Services</a></li>
+        <li><a href="results.html" class="hover:text-white transition">Proven Results</a></li>
+        <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-white font-semibold mb-4">Principal Brands</h3>
+      <ul class="space-y-2 text-sm">
+        <li>TRIMAT &mdash; Solid Carbide &amp; Indexable Tooling</li>
+        <li>DEREK &mdash; Inserts &amp; Tool-Holding Systems</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-white font-semibold mb-4">Contact</h3>
+      <ul class="space-y-3 text-sm">
+        <li>Plot No. 153, Daisy J-604, Sector 11, Tulsi Landmark, Chikhali, Pune - 411019</li>
+        <li><a href="tel:+918208271809" class="hover:text-white transition">+91 82082 71809</a> / <a href="tel:+917350205300" class="hover:text-white transition">73502 05300</a></li>
+        <li><a href="mailto:phoenixenterprises28386@gmail.com" class="hover:text-white transition break-all">phoenixenterprises28386@gmail.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-slate-800 py-6 px-4">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-slate-500 text-center">
+      <p>&copy; 2026 Phoenix Enterprises. All rights reserved. | GST No. 27BGUPG8728E1ZX</p>
+      <div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-1">
+        <a href="privacy-policy.html" class="hover:text-white transition">Privacy Policy</a>
+        <a href="terms-of-service.html" class="hover:text-white transition">Terms of Service</a>
+        <a href="cookie-policy.html" class="hover:text-white transition">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div x-data="{ show: false }" x-init="show = !localStorage.getItem('phx-cookie-consent')" x-show="show" x-cloak x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 translate-y-4" x-transition:enter-end="opacity-100 translate-y-0" class="fixed inset-x-0 bottom-0 z-[60] bg-[#071E4A] border-t border-white/10 text-slate-200 shadow-[0_-4px_20px_rgba(0,0,0,0.25)]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-wrap items-center justify-between gap-4">
+    <p class="text-sm">We use minimal cookies from embedded content (like Google Maps) to run this site. See our <a href="cookie-policy.html" class="text-sky-400 underline hover:text-sky-300">Cookie Policy</a> to learn more.</p>
+    <div class="flex gap-3 shrink-0">
+      <button ="localStorage.setItem('phx-cookie-consent','rejected'); show=false" class="text-sm font-semibold text-slate-300 hover:text-white transition px-4 py-2">Reject</button>
+      <button ="localStorage.setItem('phx-cookie-consent','accepted'); show=false" class="inline-flex items-center rounded-md bg-orange-500 hover:bg-orange-600 transition px-5 py-2 text-sm font-bold text-white shadow">Accept</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>
